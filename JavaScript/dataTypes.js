@@ -30,6 +30,7 @@ console.log(typeof scoreValue)
 /******************* Operations ***********************/
 let value = 14
 let updated_value = -value 
+
 console.log(updated_value)
 
 
