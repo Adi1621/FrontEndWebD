@@ -18,7 +18,7 @@ let isLoggedIn = false
 
 
 /**************** Datatype Conversion ******************/
-let score = "33" 
+let score = "33"
 console.log(typeof score) //string
 
 let scoreValue = Number(score) //converted into number
@@ -29,9 +29,31 @@ console.log(typeof scoreValue)
 
 /******************* Operations ***********************/
 let value = 14
-let updated_value = -value 
+let updated_value = -value
 
 console.log(updated_value)
+
+const id = Symbol('123')
+const anotherId = Symbol('123')
+
+console.log(id === anotherId) // Symbol never returns same value
+
+/*Primitive Datatypes
+/*String, Number, Boolean, Null, Undefined, Symbol, BigInt
+
+Refrence (Non Primitive)
+Arrays, Objects, Functions*/
+
+const names = ["Ram", "Shaam", "Radha"]; //array
+
+let myObj = {
+    name: "Aditya", //object
+    age: "18",
+}
+
+const myFunction = function () {
+    console.log("hello world");  //function
+}
 
 
 
