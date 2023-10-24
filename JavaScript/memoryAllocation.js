@@ -1,4 +1,3 @@
-
 // Stack (Primitive), Heap (Non-Primitive)
 
 let myName = "Aditya Kanswal"
