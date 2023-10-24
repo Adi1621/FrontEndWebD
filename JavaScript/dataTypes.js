@@ -14,7 +14,7 @@ let isLoggedIn = false
 
 // object - JS is a object-based language. Everythning is a object in JS
 
-//typeof -find datatypes of a variable
+//typeof - find datatypes of a variable
 
 
 /**************** Datatype Conversion ******************/
