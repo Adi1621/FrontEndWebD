@@ -6,7 +6,7 @@ let accountEmail = "xyz.com"
 accountName = "Rohan"
 let accountCountry
 
-accountEmail = "abc.com"//re assigining the value 
+accountEmail = "abc.com" //re assigining the value 
 
 console.log(accountId)
 console.table([accountId, accountEmail, accountName, accountCountry ])
