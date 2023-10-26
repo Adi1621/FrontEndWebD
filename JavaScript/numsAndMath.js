@@ -9,6 +9,6 @@ console.log(number2.toPrecision(3)) // return the value in String
 const number3 = 1000000000
 console.log(number3.toLocaleString('en-In'))
 
-/**********************************Math*******************************/
+/*********************************Math*******************************/
 
 console.log()
