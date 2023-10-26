@@ -25,7 +25,7 @@ let scoreValue = Number(score) //converted into number
 console.log(typeof scoreValue)
 //"111" => 111
 //"111abc" => NaN
-//true => 1; false => 0
+//true => 1; false => 0    
 
 /******************* Operations ***********************/
 let value = 14
