@@ -9,4 +9,5 @@ let accountCountry
 accountEmail = "abc.com" //re assigining the value 
 
 console.log(accountId)
+
 console.table([accountId, accountEmail, accountName, accountCountry ])
