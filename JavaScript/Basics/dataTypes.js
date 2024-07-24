@@ -39,6 +39,7 @@ const anotherId = Symbol('123')
 console.log(id === anotherId) // Symbol never returns same value
 
 /*Primitive Datatypes
+call by value
 /*String, Number, Boolean, Null, Undefined, Symbol, BigInt
 
 Refrence (Non Primitive)

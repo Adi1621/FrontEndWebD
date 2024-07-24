@@ -9,6 +9,8 @@ console.log(`Hello my name is ${name} and my age is ${age}`)
 
 const name2 = new String('Hail India')
 //some functions in string
+
+console.log(name2.__proto);
 console.log(name2[0])
 console.log(name2.length)
 console.log(name2.toUpperCase())
