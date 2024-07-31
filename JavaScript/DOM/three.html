@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; columns: #fff"></body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    div.className = "main";
+    div.id = Math.floor(Math.random() * 10 + 1);
+    console.log(div.id);
+    div.setAttribute("Title", "1");
+    div.style.color = "green";
+    div.style.backgroundColor = "#fff";
+    // div.innerText = "Hi! How are you?"
+    const addText = document.createTextNode("Hi How are you?");
+    div.appendChild(addText);
+    div.style.padding = "20px";
+
+    document.body.appendChild(div);
+
+    const div2 = document.createElement("div2");
+    div.className = "2";
+    document.body.appendChild(div2);
+    div2.style.backgroundColor = "yellow";
+    div2.innerText = "Welcome";
+  </script>
+</html>
