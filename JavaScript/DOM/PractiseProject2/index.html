@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>BMI Calculator</h1>
+
+      <form class="form" action="">
+        <div>
+          <label for="height">Height</label>
+          <input id="height" placeholder="Enter value in cm" type="text" />
+        </div>
+        <div>
+          <label for="weight">Weight</label>
+          <input id="weight" placeholder="Enter value in kg" type="text" />
+        </div>
+        <button id="button">Calculate</button>
+        <div id="result"></div>
+      </form>
+
+      <div>
+        <h2>BMI Weight Guide</h2>
+        <h4>Under Weight = Less than 18.6</h4>
+        <h4>Normal Range = 18.6 and 24.9</h4>
+        <h4>Overweight = Greater than 24.9</h4>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
