@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Switcher</title>
+    <style>
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+      }
+      .button {
+        height: 150px;
+        width: 150px;
+        border: 1px solid black;
+      }
+      .Boxes {
+        display: flex;
+        gap: 5px;
+      }
+      #grey {
+        background: grey;
+      }
+      #white {
+        background: white;
+      }
+      #blue {
+        background: blue;
+      }
+      #yellow {
+        background: yellow;
+      }
+      #beige {
+        background: beige;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Background Color Switcher</h1>
+      <div class="Boxes">
+        <div class="button" id="grey"></div>
+        <div class="button" id="white"></div>
+        <div class="button" id="blue"></div>
+        <div class="button" id="yellow"></div>
+        <div class="button" id="beige"></div>
+      </div>
+      <h2>
+        Try clicking on above colors to change the background color of the page
+      </h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
