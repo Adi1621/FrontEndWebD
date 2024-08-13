@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body style="background-color: #414141; color: aliceblue">
+    <h2>Amazing images</h2>
+    <div>
+      <ul id="images">
+        <li>
+          <img
+            width="15%"
+            id="lion"
+            src="https://plus.unsplash.com/premium_photo-1669725687221-6fe12c2da6b1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="15%"
+            id="cat"
+            src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="15%"
+            id="dog"
+            src="https://images.unsplash.com/photo-1491545437994-ebc9551b87d7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            width="15%"
+            id="tiger"
+            src="https://plus.unsplash.com/premium_photo-1669725687150-15c603ac6a73?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </li>
+        <li>
+          <a style="color: aliceblue" href="https://google.com" id="google">Google</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+//     const lion = document.querySelector('#lion')
+//     lion.addEventListener('click',(e)=>{
+//         console.log('lion');
+//     },false) // default value is false bubbling up(bottom to top)
+//     //type,timestamp,target,toElement,srcElement,currentTarget,clientX,clientY,screenX,screenY
+//    document.querySelector('#images').addEventListener('click',(e)=>{
+//     console.log('images');
+//     e.stopPropagation() 
+//    },true)  //capturing mode(top to bottom)
+
+   document.querySelector('#images').addEventListener('click',(e) =>{
+    // console.log(e.target.parentNode);
+   
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+    let removeIt = e.target.parentNode
+    removeIt.parentNode.removeChild(removeIt)
+     // (e.target.parentNode).remove()
+    }  
+   })
+  </script>
+</html>

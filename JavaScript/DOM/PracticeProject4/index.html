@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess number</title>
+    <style>
+      .body {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .submit {
+        width: 25%;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="container">
+      <form class="form" action="">
+        <div>
+          <label for="guess"><h2>Guess a number in range of 1 - 10</h2></label>
+          <input id="guess" type="number" />
+        </div>
+        <div class="button"><button class="submit">Submit</button></div>
+      </form>
+
+      <div class="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

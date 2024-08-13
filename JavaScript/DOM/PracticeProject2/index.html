@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
     <style>
+      .body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        background: rgb(151, 144, 144);
+      }
       .container {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border: 2px solid black;
+        padding: 30px;
+        border-radius: 10px;
+        background: whitesmoke;
       }
       .form {
         display: flex;
@@ -18,7 +30,7 @@
       }
     </style>
   </head>
-  <body>
+  <body class="body">
     <div class="container">
       <h1>BMI Calculator</h1>
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="heading">Hi</h1>
+    <button class="change">Stop</button>
+  </body>
+  <script>
+    //Set timeout window method
+    const heading = document.querySelector("#heading");
+    const button = document.querySelector(".change");
+
+    const expand = () => {
+      heading.innerHTML = "Hi! My name is Aditya";
+    };
+
+    const changeText = setTimeout(expand, 3000);
+
+    const stop = () => {
+      clearTimeout(changeText);
+    };
+
+    button.addEventListener("click", (e) => {
+      stop();
+      console.log("stop called");
+    });
+  </script>
+</html>
